@@ -6,31 +6,6 @@ RUN apt-get update && apt-get -y install sudo nano git wget curl openssh-server 
 
 #RUN apt-get -y install apt-utils
 
-# # Python Packages
-# RUN python3 -m pip install cluster
-# RUN python3 -m pip install pdfrw
-# # RUN python3 -m pip install pdftotext
-# # RUN python3 -m pip install pdf2image
-# # RUN python3 -m pip install pyperclip
-# RUN python3 -m pip install requests
-# #RUN python3 -m pip install img2pdf
-# RUN python3 -m pip install pdfminer.six
-# RUN python3 -m pip install redis
-# RUN python3 -m pip install tqdm
-# RUN python3 -m pip install seaborn
-# RUN python3 -m pip install matplotlib
-# RUN python3 -m pip install numpy
-# RUN python3 -m pip install deepdiff
-# RUN python3 -m pip install Pillow
-# #RUN python3 -m pip install PyPDF2
-# RUN python3 -m pip install flask
-# RUN python3 -m pip install sanic
-# RUN python3 -m pip install sanic_limiter
-# RUN python3 -m pip install werkzeug
-# RUN python3 -m pip install aiofiles
-# #RUN python3 -m pip install PyMuPDF
-# #RUN python3 -m pip fitz
-
 # Create User
 RUN useradd -ms /bin/bash morphs -p lamorsa && mkdir -p /home/morphs && \
     chown -R morphs:morphs /home/morphs && \
