@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get -y install sudo nano git wget curl openssh-server \
     iptables iproute2 net-tools build-essential software-properties-common \
     libpoppler-cpp-dev pkg-config python3-pip python3-venv python3-dev qpdf
